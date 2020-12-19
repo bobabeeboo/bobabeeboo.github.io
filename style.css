@@ -1,0 +1,115 @@
+body {
+    color:#315f0a;
+    background-color:rgb(243, 238, 230);
+    font-family: Sans-Serif;
+}
+
+h1 {
+    font-weight: bold italic;
+}
+
+h1:hover {
+    color:#044116;
+}
+
+th, td {
+    padding: 20px;
+    
+    
+}
+
+td {
+    text-align: center;
+}
+
+#buttonId {
+    background-color: #315f0a;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    margin: 7px;
+}
+
+.buttonClass {
+    background-color: #315f0a;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    margin: 7px;
+}
+
+#navbar ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e7dcd0;
+    margin-top: 0;
+}
+
+#navbar li{
+    float: left;
+    display: block;
+    padding: 16px 20px;
+    font-family: courier;
+    font-weight: bold;
+    cursor: pointer;
+    color: #5a4038;
+}
+
+#navbar li:hover {
+    background-color: #e2d3c2;
+    transition-duration: 0.5s;
+}
+
+#navbar a{
+    color: #5a4038;
+    text-decoration: none;
+}
+
+#navbar #active{
+    background-color:rgb(243, 238, 230);
+}
+
+#carousel{
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#carousel img{
+    width: 100%;
+}
+
+#carousel .hiddenSlide{
+    display: none;
+}
+
+
+#carousel #activeSlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#carousel .slideArrow{
+    cursor: pointer;
+    user-select: none;
+    font-size: 48px;
+    color: rgb(196, 175, 151); 
+}
+
+#carousel .slideArrow:hover{
+    color: #b19474;
+    transition-duration: 0.5s;
+}
